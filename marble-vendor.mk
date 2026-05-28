@@ -18,16 +18,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_cdp/CDP_ukee_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_cdp/CDP_ukee_acdb_cal.acdb \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_cdp/CDP_ukee_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_cdp/CDP_ukee_workspaceFileXml.qwsp \
-    vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_mtp/Forte_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_mtp/Forte_acdb_cal.acdb \
-    vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_mtp/Forte_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_mtp/Forte_workspaceFileXml.qwsp \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_mtp/MTP_ukee_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_mtp/MTP_ukee_acdb_cal.acdb \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_mtp/MTP_ukee_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_mtp/MTP_ukee_workspaceFileXml.qwsp \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_qrd/QRD_ukee_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_qrd/QRD_ukee_acdb_cal.acdb \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/ukee_qrd/QRD_ukee_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ukee_qrd/QRD_ukee_workspaceFileXml.qwsp \
-    vendor/xiaomi/marble/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/xiaomi/marble/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/102_SummerDay.png \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/103_Fantasy.png \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
@@ -420,6 +414,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946370515662721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946370515662721.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946480857061761.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061761.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -757,6 +752,7 @@ PRODUCT_PACKAGES += \
     camx.provider@2.5-legacy \
     camx.provider@2.6-legacy \
     camx.provider@2.7-legacy \
+    com.fingerprints.extension@3.0 \
     com.qti.chiusecaseselector \
     com.qti.feature2.anchorsync \
     com.qti.feature2.demux \
@@ -805,8 +801,8 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     camera.xiaomi \
     com.qti.chi.override \
-    fingerprint.fpc.default \
-    fingerprint.goodix.default \
+    fingerprint.fpc \
+    fingerprint.goodix \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
     libAF \
     libMiMotion \
@@ -1035,7 +1031,9 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_misound_res_headphone_bin \
     vendor_lib_rfsa_adsp_misound_res_spk_bin \
     vendor_lib_rfsa_adsp_misound_res_spk4ch_bin \
+    AHBF@2.1-service.xml \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
     batterysecret \
+    mfp-daemon \
     vendor.qti.camera.provider@2.7-service_64 \
     vendor.xiaomi.hardware.quickcamera@1.0-service

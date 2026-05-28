@@ -4171,7 +4171,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.metadatautils",
                 "libcom.xiaomi.debug",
                 "libmialgo_snsc",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libcom.xiaomi.mawutils",
                 "libc++",
                 "libc",
@@ -4661,7 +4661,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.3-impl",
                 "libjpeg",
                 "libsync",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libutils",
                 "libyuv",
                 "android.hardware.graphics.mapper@2.0",
@@ -4752,7 +4752,7 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "liblog",
                 "libsync",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libutils",
                 "libyuv",
                 "android.hardware.graphics.mapper@2.0",
@@ -4846,7 +4846,7 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "liblog",
                 "libsync",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libutils",
                 "libyuv",
                 "android.hardware.graphics.mapper@2.0",
@@ -4996,7 +4996,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5052,7 +5052,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5106,7 +5106,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5166,7 +5166,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5222,7 +5222,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5280,7 +5280,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5340,7 +5340,7 @@ cc_prebuilt_library_shared {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
@@ -5354,6 +5354,34 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "camx.device@3.7-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.fingerprints.extension@3.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/com.fingerprints.extension@3.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -5456,7 +5484,7 @@ cc_prebuilt_library_shared {
                 "libomp",
                 "libdmabufheap",
                 "libxmi_slow_motion_mein",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "libz",
                 "libc",
                 "libm",
@@ -7604,7 +7632,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.fpc.default",
+    name: "fingerprint.fpc",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -7612,7 +7640,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.fpc.default.so",
+                "proprietary/vendor/lib64/hw/fingerprint.fpc.so",
             ],
             shared_libs: [
                 "liblog",
@@ -7638,7 +7666,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.goodix.default",
+    name: "fingerprint.goodix",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -7646,7 +7674,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.goodix.default.so",
+                "proprietary/vendor/lib64/hw/fingerprint.goodix.so",
             ],
             shared_libs: [
                 "libgf_hal",
@@ -12828,6 +12856,15 @@ prebuilt_rfsa {
 }
 
 prebuilt_etc_xml {
+    name: "AHBF@2.1-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/AHBF@2.1-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.quickcamera@1.0-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml",
@@ -12869,6 +12906,46 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "mfp-daemon",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/mfp-daemon",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "android.hardware.biometrics.fingerprint@2.1",
+                "vendor.xiaomi.hardware.fingerprintextension@1.0",
+                "libvndksupport",
+                "libbinder",
+                "com.fingerprints.extension@3.0",
+                "vendor.xiaomi.hardware.fx.tunnel@1.0",
+                "vendor.xiaomi.hw.touchfeature@1.0",
+                "libstagefright_foundation-v33",
+                "android.frameworks.sensorservice@1.0",
+                "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "vendor.qti.camera.provider@2.7-service_64",
     owner: "xiaomi",
     target: {
@@ -12901,7 +12978,7 @@ cc_prebuilt_binary {
                 "camx.device@3.4-impl",
                 "camx.device@3.5-impl",
                 "camx.device@3.6-impl",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@3.0",
                 "android.hardware.graphics.mapper@4.0",
