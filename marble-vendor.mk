@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/marble
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/marble/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_acdb_cal.acdb \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
@@ -409,6 +410,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomiSceneDetection.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/df_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/df_default.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946370515662721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946370515662721.xml \
@@ -416,8 +418,39 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mdss_dsi_m16t_36_02_0a_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_m16t_36_02_0a_dsc_vid_mi.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mdss_dsi_m16t_36_0d_0b_dsc_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_m16t_36_0d_0b_dsc_vid_mi.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLutInfo.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLutInfo.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_0.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_1.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_10.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_10.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_11.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_11.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_12.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_12.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_13.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_13.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_14.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_14.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_15.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_16.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_16.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_17.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_17.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_18.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_18.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_19.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_19.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_2.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_20.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_20.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_3.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_4.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_4.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_5.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_5.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_6.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_6.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_7.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_7.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_8.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/miLut_9.txt:$(TARGET_COPY_OUT_VENDOR)/etc/miLut_9.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_0.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_1.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_2.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/mi_gc_3.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_3.txt \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lightSensorConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lightSensorConfig.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/qmc6308_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qmc6308_0.json \
@@ -801,10 +834,14 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     camera.xiaomi \
     com.qti.chi.override \
+    displayfeature.default \
     fingerprint.fpc \
     fingerprint.goodix \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
+    vendor.xiaomi.sensor.citsensorservice@2.0-impl \
     libAF \
+    libMiDispDevManager \
     libMiMotion \
     libQnnHtpAltPrepV69Stub \
     libSNPE \
@@ -853,6 +890,7 @@ PRODUCT_PACKAGES += \
     libcamxtintlessalgo \
     libceres \
     libchilog \
+    libcolortempmode \
     libcom.qti.chinodeutils \
     libcom.xiaomi.debug \
     libcom.xiaomi.grallocutils \
@@ -860,6 +898,14 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
     libdeflicker \
+    libdisplayconfig.qti \
+    libdisplaycount \
+    libdisplayfeature \
+    libdisplayfeatureservice \
+    libdither \
+    libeyecare \
+    libflatmode \
+    libfpsmonitor \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
@@ -870,6 +916,11 @@ PRODUCT_PACKAGES += \
     libjpege \
     libmctfengine_stub \
     libmfGhostDetection \
+    libmi-stc-HW-modulate \
+    libmiBrightness \
+    libmiSensorCtrl \
+    libmiXmlParser \
+    libmi_dspp \
     libmi_supernight_raw_checker \
     libmiai_deblur \
     libmiai_portraitsupernight \
@@ -909,6 +960,7 @@ PRODUCT_PACKAGES += \
     libopencv3a \
     libopestriping \
     libos \
+    libpaperMode \
     libqll \
     libqll10 \
     libqllengine \
@@ -918,18 +970,23 @@ PRODUCT_PACKAGES += \
     libremosaic_wrapper \
     libremosaiclib \
     librmsclib1 \
+    libsdr2hdr \
+    libsensor_cal@2.0 \
     libsfeShiftExtrapolation \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
+    libsre \
     libssccalapi@2.0 \
     libsupermoon \
     libswregistrationalgo \
     libsynx \
     libtfestriping \
     libthreadutils \
+    libtruetone \
     libubifocus \
     libvideoBokeh \
     libvideofilter_only \
+    libvideomode \
     libvidhance \
     libvidhance_active_ois \
     libvidhance_face_stabilizer \
@@ -947,7 +1004,11 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
     vendor.xiaomi.hardware.campostproc@1.0 \
+    vendor.xiaomi.hardware.displayfeature@1.0 \
     vendor.xiaomi.hardware.quickcamera@1.0 \
+    vendor.xiaomi.sensor.citsensorservice@1.1 \
+    vendor.xiaomi.sensor.citsensorservice@2.0 \
+    vendor.xiaomi.sensor.communicate@1.0 \
     vendor_lib_rfsa_adsp_bm2n00_bin \
     vendor_lib_rfsa_adsp_bm2n01_bin \
     vendor_lib_rfsa_adsp_bm2n02_bin \
@@ -1031,9 +1092,17 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_misound_res_headphone_bin \
     vendor_lib_rfsa_adsp_misound_res_spk_bin \
     vendor_lib_rfsa_adsp_misound_res_spk4ch_bin \
+    libhdrmode \
     AHBF@2.1-service.xml \
+    vendor.xiaomi.hardware.displayfeature@1.0-service.xml \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
+    vendor.xiaomi.sensor.communicate@1.0_manifest.xml \
     batterysecret \
+    displayfeature \
     mfp-daemon \
     vendor.qti.camera.provider@2.7-service_64 \
-    vendor.xiaomi.hardware.quickcamera@1.0-service
+    vendor.xiaomi.hardware.displayfeature@1.0-service \
+    vendor.xiaomi.hardware.quickcamera@1.0-service \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service \
+    vendor.xiaomi.sensor.communicate@1.0-service
